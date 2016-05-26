@@ -1,0 +1,9 @@
+<h1>Notes <a class="btn btn-default" href="#/notes/new">New Note</a></h1>
+<nw-category-selector ng-model="search.category"></nw-category-selector>
+<div class="row">
+	<div ng-repeat="note in notes " class="col-sm-6">
+		<h2><a ng-href="#/notes/{{note.id}}">{{note.title}}</a></h2>
+		<p>{{note.description}}</p>
+		<p><span class="label label-info">{{note.category.name}}</span></p>
+	</div>
+</div>

@@ -1,0 +1,54 @@
+<html ng-app="NoteWrangler">
+	<head>
+		<title>Note Wrangler</title>
+		<link rel="stylesheet" type="text/css" href="assets/styles/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="assets/styles/bootstrap-theme.css">
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<div class="navbar-brand">
+						<a href="/#/">Note Wrangler</a>
+					</div>
+				</div>
+				<!-- <ul class="nav navbar-nav">
+					<li><a href="#/notes">Notes</a></li>
+					<li><a href="#/users">Users</a></li>
+				</ul> -->
+				<nw-page-nav></nw-page-nav>
+			</div>
+		</nav>
+		<div ng-view class="container-fluid"></div>
+	</body>
+
+	<!-- vendor -->
+	<script type="text/javascript" src="assets/javascript/vendor/jquery-2.2.4.js"></script>
+	<script type="text/javascript" src="assets/javascript/vendor/angular.js"></script>
+	<script type="text/javascript" src="assets/javascript/vendor/angular-route.js"></script>
+	<script type="text/javascript" src="assets/javascript/vendor/angular-resource.js"></script>
+	<script type="text/javascript" src="assets/javascript/vendor/bootstrap.js"></script>
+
+	<!-- App -->
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	<script type="text/javascript" src="assets/javascript/routes.js"></script>
+
+	<!-- Directive -->
+	<script type="text/javascript" src="assets/javascript/directives/nwPageNav.js"></script>
+	<script type="text/javascript" src="assets/javascript/directives/nwCategorySelector.js"></script>	
+	
+	<!-- Controller -->
+	<script type="text/javascript" src="assets/javascript/controller/notesCreateController.js"></script>
+	<script type="text/javascript" src="assets/javascript/controller/notesEditController.js"></script>
+	<script type="text/javascript" src="assets/javascript/controller/notesIndexController.js"></script>
+	<script type="text/javascript" src="assets/javascript/controller/notesShowController.js"></script>
+	<script type="text/javascript" src="assets/javascript/controller/usersShowController.js"></script>
+	<script type="text/javascript" src="assets/javascript/controller/usersIndexController.js"></script>
+	
+	<!-- Services -->
+	<script type="text/javascript" src="assets/javascript/services/notes.js"></script>
+	<script type="text/javascript" src="assets/javascript/services/users.js"></script>
+	<script type="text/javascript" src="assets/javascript/services/category.js"></script>
+
+</html>
